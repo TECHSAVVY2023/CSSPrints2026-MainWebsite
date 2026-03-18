@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 font-sans text-gray-900">
+  <div class="min-h-screen bg-[#F6F8FA] font-sans text-gray-900">
     <nav class="flex items-center justify-between px-8 py-4 bg-white shadow-sm">
       <div class="flex items-center gap-8">
         <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
@@ -55,6 +55,7 @@
     </header>
 
     <main class="max-w-6xl mx-auto -mt-16 mb-20 px-4 relative z-20">
+
       <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center">
         
         <div class="flex-1">
@@ -97,7 +98,36 @@
           </div>
         </div>
       </div>
+
+      <div id="top-selling-services" class="max-w-6xl mx-auto mt-32 mb-40 px-4 relative">
+        <h2 class="text-4xl font-bold text-[#222222] tracking-wide uppercase text-center">Top Selling Services</h2>
+        <div class="w-[460px] h-[2px] bg-[#222222] mx-auto mb-20 rounded"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="bg-white aspect-[3/4] rounded-lg shadow-xl p-6 flex flex-col items-left">
+            <img src="#" alt="Custom Mugs" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold mb-2">Service 1</h3>
+            <p class="text-[#222222] text-lg text-left">Personalize your mugs with our high-quality printing services. Perfect for gifts and promotions.</p>
+          </div>
+
+          <div class="bg-white aspect-[3/4] rounded-lg shadow-xl p-6 flex flex-col items-left">
+            <img src="#" alt="ID Services" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold mb-2">Service 2</h3>
+            <p class="text-[#222222] text-lg text-left">Fast and reliable ID card printing for schools, businesses, and events. Durable and professional results.</p>
+          </div>
+
+          <div class="bg-white aspect-[3/4] rounded-lg shadow-xl p-6 flex flex-col items-left">
+            <img src="#" alt="Digital Printing" class="w-full h-48 object-cover rounded-md mb-4">
+            <h3 class="text-2xl font-semibold mb-2">Service 3</h3>
+            <p class="text-[#222222] text-lg text-left">High-quality digital printing for all your needs. From flyers to banners, we deliver vibrant results.</p>
+          </div>
+
+        </div>
+      </div>
+
     </main>
+
   </div>
 </template>
 
