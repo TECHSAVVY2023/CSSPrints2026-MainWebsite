@@ -27,7 +27,7 @@
           <a href="#" class="hover:text-orange-600">About Us</a>
         </div>
         <div class="flex gap-3">
-          <button class="bg-[#c07128] text-white px-6 py-2 rounded-md font-medium hover:bg-orange-700 transition">Login</button>
+          <button class="bg-[#B86B1F] text-white px-6 py-2 rounded-md font-medium hover:bg-[#7E450C] transition">Login</button>
           <button class="bg-[#3a4d5e] text-white px-6 py-2 rounded-md font-medium hover:bg-slate-800 transition">Register</button>
         </div>
       </div>
@@ -48,13 +48,13 @@
         <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">
           From custom mugs to ID services, we handle your printing needs with precision and care. Quality work, delivered fast.
         </p>
-        <button class="bg-[#c07128] px-8 py-3 rounded-md font-semibold hover:bg-orange-700 transition uppercase text-sm tracking-widest">
+        <button class="bg-[#B86B1F] px-8 py-3 rounded-md font-semibold hover:bg-[#7E450C] transition uppercase text-sm tracking-widest">
           Enquire Now
         </button>
       </div>
     </header>
 
-    <main class="max-w-6xl mx-auto -mt-16 mb-20 px-4 relative z-20">
+    <main class="max-w-6xl mx-auto -mt-16 px-4 relative z-20">
 
       <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center">
         
@@ -63,7 +63,7 @@
           <p class="text-gray-600 leading-relaxed mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus massa, tincidunt a laoreet sit amet, tincidunt sed nibh. Ut vehicula pretium enim, non ullamcorper turpis iaculis a.
           </p>
-          <button class="bg-[#c07128] text-white px-8 py-3 rounded-md font-medium hover:bg-orange-700 transition">
+          <button class="bg-[#B86B1F] text-white px-8 py-3 rounded-md font-medium hover:bg-[#7E450C] transition">
             View Products
           </button>
         </div>
@@ -76,12 +76,12 @@
               alt="Product Showcase"
             />
             
-            <button @click="prevSlide" class="absolute left-4 top-1/2 -translate-y-1/2 bg-[#c07128]/80 p-2 rounded-full text-white hover:bg-orange-600">
+            <button @click="prevSlide" class="absolute left-4 top-1/2 -translate-y-1/2 bg-[#B86B1F] p-2 rounded-full text-white hover:bg-[#7E450C]">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
               </svg>
             </button>
-            <button @click="nextSlide" class="absolute right-4 top-1/2 -translate-y-1/2 bg-[#c07128]/80 p-2 rounded-full text-white hover:bg-orange-600">
+            <button @click="nextSlide" class="absolute right-4 top-1/2 -translate-y-1/2 bg-[#B86B1F] p-2 rounded-full text-white hover:bg-[#7E450C]">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
               </svg>
@@ -99,31 +99,42 @@
         </div>
       </div>
 
-      <div id="top-selling-services" class="max-w-6xl mx-auto mt-32 mb-40 px-4 relative">
+      <div id="top-selling-services" class="max-w-6xl mx-auto mt-32 pb-40 px-4 relative">
         <h2 class="text-4xl font-bold text-[#222222] tracking-wide uppercase text-center">Top Selling Services</h2>
         <div class="w-[460px] h-[2px] bg-[#222222] mx-auto mb-20 rounded"></div>
 
+        <!-- The card container -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          <div class="bg-white aspect-[3/4] rounded-lg shadow-xl p-6 flex flex-col items-left">
-            <img src="#" alt="Custom Mugs" class="w-full h-48 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Service 1</h3>
-            <p class="text-[#222222] text-lg text-left">Personalize your mugs with our high-quality printing services. Perfect for gifts and promotions.</p>
-          </div>
+          <!-- The cards -->
+          <div v-for="service in services" :key="service.id" class="bg-white rounded-lg shadow-xl flex flex-col h-full overflow-hidden">
+            <!-- Image on top -->
+            <div class="h-48 w-full">
+              <img :src="service.img" :alt="service.title" class="w-full h-full object-cover rounded-t-lg">
+            </div>
 
-          <div class="bg-white aspect-[3/4] rounded-lg shadow-xl p-6 flex flex-col items-left">
-            <img src="#" alt="ID Services" class="w-full h-48 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Service 2</h3>
-            <p class="text-[#222222] text-lg text-left">Fast and reliable ID card printing for schools, businesses, and events. Durable and professional results.</p>
-          </div>
-
-          <div class="bg-white aspect-[3/4] rounded-lg shadow-xl p-6 flex flex-col items-left">
-            <img src="#" alt="Digital Printing" class="w-full h-48 object-cover rounded-md mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Service 3</h3>
-            <p class="text-[#222222] text-lg text-left">High-quality digital printing for all your needs. From flyers to banners, we deliver vibrant results.</p>
+            <!-- Text container -->
+            <div class="flex-1 px-6 pt-6 pb-20 flex flex-col">
+              <h3 class="text-xl font-semibold mb-2">{{ service.title }}</h3>
+              <p class="text-[#222222] text-md flex-1">
+                {{ service.description }}
+              </p>
+            </div>
           </div>
 
         </div>
+
+        <div class="mt-12 text-center">
+
+          <button class="bg-[#B86B1F] text-white px-8 py-3 rounded-lg hover:bg-[#7E450C] transition inline-flex items-center justify-center gap-1">
+            Services
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+        </div>
+
       </div>
 
     </main>
@@ -139,6 +150,12 @@ const carouselImages = [
   'https://images.unsplash.com/photo-1514228742587-6b1558fbed20?auto=format&fit=crop&q=80&w=800',
   'https://images.unsplash.com/photo-1572113173140-5e5e737bd31a?auto=format&fit=crop&q=80&w=800',
   'https://images.unsplash.com/photo-1539375665275-f9ad415ef9ac?auto=format&fit=crop&q=80&w=800'
+]
+
+const services = [
+  { id: 1, title: 'Service 1', img: '#', description: 'Personalize your mugs with our high-quality printing services. Perfect for gifts and promotions.' },
+  { id: 2, title: 'Service 2', img: '#', description: 'Personalize your mugs with our high-quality printing services. Perfect for gifts and promotions.' },
+  { id: 3, title: 'Service 3', img: '#', description: 'Personalize your mugs with our high-quality printing services. Perfect for gifts and promotions.' },
 ]
 
 const nextSlide = () => {
