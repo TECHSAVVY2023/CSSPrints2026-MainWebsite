@@ -139,6 +139,43 @@
 
     </main>
 
+    <div id="location" class="flex justify-center items-center bg-[#3B5065] w-full h-[600px] px-[100px] py-24">
+
+      <div class="bg-[url('/map1.jpg')] flex w-[1600px] h-full gap-20 px-10 py-10 overflow-hidden rounded-3xl shadow-2xl">
+        <div class="w-[50%] h-full">
+          <iframe 
+            class="w-full h-full rounded-2xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30401.421116511025!2d123.83401664314265!3d8.171992009143041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3255ac6e02a7dfd7%3A0x98968b6f04a82104!2sJAL%20PRINTING%20SERVICES!5e1!3m2!1sen!2sph!4v1773992852832!5m2!1sen!2sph" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="flex flex-col gap-32 w-[50%]">
+          <div>
+            <h2 class="text-white font-semibold text-3xl">CSS Printing Shop Association</h2>
+            <p class="text-white pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget semper erat. 
+              Suspendisse ante sem, tempus non est ut, volutpat pharetra est. 
+              Nulla aliquet pulvinar orci, vitae aliquet nisi fermentum dictum. Pellentesque molestie elit et euismod dapibus. 
+              Morbi erat est, pretium at metus in, iaculis mattis ipsum.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <h2 class="text-white font-semibold text-2xl pr-3 pt-2">Call us now: </h2>
+            <p class="text-white text-2xl pr-10 pt-2">+63 000 000 0000</p>
+            <button class="bg-[#B86B1F] text-white px-8 py-3 rounded-lg hover:bg-[#7E450C] transition inline-flex items-center justify-center gap-1">
+              Call now
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
   </div>
 </template>
 
@@ -165,6 +202,7 @@ const nextSlide = () => {
 const prevSlide = () => {
   activeIdx.value = activeIdx.value === 0 ? carouselImages.length - 1 : activeIdx.value - 1
 }
+
 </script>
 
 <style>
@@ -176,3 +214,6 @@ const prevSlide = () => {
   opacity: 0;
 }
 </style>
+
+<script setup>
+</script>
