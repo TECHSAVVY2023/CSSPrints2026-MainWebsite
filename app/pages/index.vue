@@ -28,7 +28,7 @@
         </div>
         <div class="flex gap-3">
           <button class="bg-[#B86B1F] text-white px-6 py-2 rounded-md font-medium hover:bg-[#7E450C] transition">Login</button>
-          <button class="bg-[#3a4d5e] text-white px-6 py-2 rounded-md font-medium hover:bg-slate-800 transition">Register</button>
+          <button class="bg-[#3a4d5e] text-white px-6 py-2 rounded-md font-medium hover:bg-[#1F2B37] transition">Register</button>
         </div>
       </div>
     </nav>
