@@ -99,21 +99,18 @@
         </div>
       </div>
 
-      <div id="top-selling-services" class="max-w-6xl mx-auto mt-32 pb-40 px-4 relative">
+      <div id="top-selling-services" class="max-w-6xl mx-auto mt-32 pb-36 px-4 relative">
         <h2 class="text-4xl font-bold text-[#222222] tracking-wide uppercase text-center">Top Selling Services</h2>
         <div class="w-[460px] h-[2px] bg-[#222222] mx-auto mb-20 rounded"></div>
 
-        <!-- The card container -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          <!-- The cards -->
           <div v-for="service in services" :key="service.id" class="bg-white rounded-lg shadow-xl flex flex-col h-full overflow-hidden">
-            <!-- Image on top -->
+
             <div class="h-48 w-full">
               <img :src="service.img" :alt="service.title" class="w-full h-full object-cover rounded-t-lg">
             </div>
 
-            <!-- Text container -->
             <div class="flex-1 px-6 pt-6 pb-20 flex flex-col">
               <h3 class="text-xl font-semibold mb-2">{{ service.title }}</h3>
               <p class="text-[#222222] text-md flex-1">
@@ -139,41 +136,119 @@
 
     </main>
 
-    <div id="location" class="flex justify-center items-center bg-[#3B5065] w-full h-[600px] px-[100px] py-24">
+    <div id="location" class="flex justify-center items-center bg-[#3B5065] w-full min-h-[600px] px-4 sm:px-8 lg:px-20 py-16">
 
-      <div class="bg-[url('/map1.jpg')] flex w-[1600px] h-full gap-20 px-10 py-10 overflow-hidden rounded-3xl shadow-2xl">
-        <div class="w-[50%] h-full">
+      <div class="bg-[url('/map1.jpg')] flex flex-col lg:flex-row w-full max-w-7xl h-auto gap-10 lg:gap-20 px-5 sm:px-8 py-8 overflow-hidden rounded-3xl shadow-2xl">
+        
+        <!-- Map -->
+        <div class="w-full lg:w-1/2 h-[300px] sm:h-[400px] lg:h-auto">
           <iframe 
             class="w-full h-full rounded-2xl"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30401.421116511025!2d123.83401664314265!3d8.171992009143041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3255ac6e02a7dfd7%3A0x98968b6f04a82104!2sJAL%20PRINTING%20SERVICES!5e1!3m2!1sen!2sph!4v1773992852832!5m2!1sen!2sph" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30401.421116511025!2d123.83401664314265!3d8.171992009143041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3255ac6e02a7dfd7%3A0x98968b6f04a82104!2sJAL%20PRINTING%20SERVICES!5e1!3m2!1sen!2sph!4v1773992852832!5m2!1sen!2sph"
             style="border:0;" 
             allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            loading="lazy">
           </iframe>
         </div>
 
-        <div class="flex flex-col gap-32 w-[50%]">
+        <!-- Content -->
+        <div class="flex flex-col justify-between w-full lg:w-1/2 gap-10">
+          
           <div>
-            <h2 class="text-white font-semibold text-3xl">CSS Printing Shop Association</h2>
-            <p class="text-white pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget semper erat. 
+            <h2 class="text-white font-semibold text-2xl sm:text-3xl">
+              CSS Printing Shop Association
+            </h2>
+            <p class="text-white pt-4 text-sm sm:text-base leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget semper erat. 
               Suspendisse ante sem, tempus non est ut, volutpat pharetra est. 
-              Nulla aliquet pulvinar orci, vitae aliquet nisi fermentum dictum. Pellentesque molestie elit et euismod dapibus. 
-              Morbi erat est, pretium at metus in, iaculis mattis ipsum.
+              Nulla aliquet pulvinar orci, vitae aliquet nisi fermentum dictum.
             </p>
           </div>
-          <div class="flex justify-end">
-            <h2 class="text-white font-semibold text-2xl pr-3 pt-2">Call us now: </h2>
-            <p class="text-white text-2xl pr-10 pt-2">+63 000 000 0000</p>
-            <button class="bg-[#B86B1F] text-white px-8 py-3 rounded-lg hover:bg-[#7E450C] transition inline-flex items-center justify-center gap-1">
+
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end gap-3">
+            <h2 class="text-white font-semibold text-lg sm:text-xl">
+              Call us now:
+            </h2>
+            <p class="text-white text-lg sm:text-xl">
+              +63 000 000 0000
+            </p>
+            <button class="bg-[#B86B1F] text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-[#7E450C] transition">
               Call now
             </button>
           </div>
+
         </div>
 
       </div>
-
     </div>
+
+<div class="relative flex justify-center items-center w-full px-4 py-12 md:py-20">
+  <div class="relative bg-[#B86B1F] flex flex-col md:flex-row w-full max-w-[1200px] p-6 md:p-10 rounded-xl">
+
+<!-- Left Image -->
+<div id="left-image" class="relative flex-shrink-0 w-full md:w-1/2 mb-6 md:mb-0 overflow-hidden rounded-lg">
+  
+  <!-- Image -->
+  <img
+    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800"
+    alt="FAQ Banner"
+    class="w-full h-56 sm:h-64 md:h-full object-cover"
+  />
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- Text Content -->
+  <div class="absolute inset-0 flex flex-col justify-start px-8 pt-20 text-left">
+    <h2 class="text-white text-xl sm:text-2xl md:text-3xl font-bold">
+      Frequently Asked Questions
+    </h2>
+    <p class="text-white pt-5">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus massa, tincidunt a laoreet sit amet, tincidunt sed nibh. Ut vehicula pretium enim, non ullamcorper turpis iaculis a. 
+    </p>
+  </div>
+
+</div>
+
+    <!-- FAQ Section -->
+    <div id="faqs" class="relative flex flex-col justify-start md:pt-12 lg:pt-14  h-[300px] md:h-[340px] overflow-y-auto no-scrollbar w-full">
+
+      <div class="relative">
+        <!-- Vertical Line -->
+        <div class="absolute left-6 md:left-20 top-0 bottom-0 w-[2px] bg-white"></div>
+
+        <div
+          v-for="(item,index) in faqs"
+          :key="index"
+          class="relative pl-12 md:pl-28 pt-2 pb-4"
+        >
+          <!-- Dot -->
+          <div class="absolute left-[18px] md:left-[75px] top-5 w-3 h-3 bg-white rounded-full"></div>
+
+          <!-- Question -->
+          <button             
+            @click="toggle(index)"
+            class="text-left text-white text-lg md:text-xl w-full font-semibold"
+          >
+            {{ item.question }}
+          </button>
+
+          <!-- Answer -->
+          <transition name="faq-fade">
+            <div
+              v-if="activeIndex === index"
+              class="mt-2 mr-0 md:mr-20 text-white text-sm md:text-md"
+            >
+              {{ item.answer }}
+            </div>
+          </transition>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
   </div>
@@ -203,6 +278,49 @@ const prevSlide = () => {
   activeIdx.value = activeIdx.value === 0 ? carouselImages.length - 1 : activeIdx.value - 1
 }
 
+const activeIndex = ref(null)
+
+const faqs = ref([
+  {
+    question: "1 Lorem ipsum dolor sit amet? ",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus massa, Credits to Niel For this layout idea, tincidunt sed nibh. Ut vehicula pretium enim, non ullamcorper  iaculis a."
+  },
+  {
+    question: "2 Lorem ipsum dolor sit amet? ",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus massa, Credits to Niel For this layout idea, tincidunt sed nibh. Ut vehicula pretium enim, non ullamcorper  iaculis a."
+  },
+  {
+    question: "3 Lorem ipsum dolor sit amet? ",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus massa, Credits to Niel For this layout idea, tincidunt sed nibh. Ut vehicula pretium enim, non ullamcorper  iaculis a."
+  },
+  {
+    question: "4 Lorem ipsum dolor sit amet? ",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus massa, Credits to Niel For this layout idea, tincidunt sed nibh. Ut vehicula pretium enim, non ullamcorper  iaculis a."
+  },
+  {
+    question: "5 Lorem ipsum dolor sit amet? ",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus massa, Credits to Niel For this layout idea, tincidunt sed nibh. Ut vehicula pretium enim, non ullamcorper  iaculis a."
+  }
+])
+
+const toggle = (index) => {
+  activeIndex.value = activeIndex.value === index ? null : index
+
+  nextTick(() => {
+    const el = document.getElementById(`faq-${index}`)
+    const container = el?.closest('.overflow-y-auto')
+
+    if (el && container) {
+      const offset = 20
+
+      container.scrollTo({
+        top: el.offsetTop - offset,
+        behavior: 'smooth'
+      })
+    }
+  })
+}
+
 </script>
 
 <style>
@@ -213,6 +331,27 @@ const prevSlide = () => {
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
 }
+
+.faq-fade-enter-active,
+.faq-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.faq-fade-enter-from,
+.faq-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 </style>
 
 <script setup>
