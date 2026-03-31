@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "role": "Lead Designer",
+    "image": "/staff1.png",
+    "description": "Lead designer responsible for branding and UI systems."
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "role": "Operations Manager",
+    "image": "/staff2.png",
+    "description": "Handles operations and customer relations."
+  },
+  {
+    "id": 3,
+    "name": "Mike Lee",
+    "role": "Print Technician",
+    "image": "/staff3.png",
+    "description": "Print technician ensuring high-quality outputs."
+  },
+  {
+    "id": 4,
+    "name": "Jane Smith",
+    "role": "Print Technician",
+    "image": "/staff4.png",
+    "description": "Handles operations and customer relations."
+  },
+  {
+    "id": 5,
+    "name": "Mike Lee",
+    "role": "Lead Designer",
+    "image": "/staff5.png",
+    "description": "Print technician ensuring high-quality outputs."
+  },
+  {
+    "id": 6,
+    "name": "Mike Lee",
+    "role": "Operations Manager",
+    "image": "/staff6.png",
+    "description": "Print technician ensuring high-quality outputs."
+  }
+]

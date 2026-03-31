@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Service 1",
+    "img": "#",
+    "description": "Personalize your mugs with our high-quality printing services. Perfect for gifts and promotions."
+  },
+  {
+    "id": 2,
+    "title": "Service 2",
+    "img": "#",
+    "description": "Personalize your mugs with our high-quality printing services. Perfect for gifts and promotions."
+  },
+  {
+    "id": 3,
+    "title": "Service 3",
+    "img": "#",
+    "description": "Personalize your mugs with our high-quality printing services. Perfect for gifts and promotions."
+  }
+]
