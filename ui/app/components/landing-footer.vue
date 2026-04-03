@@ -3,8 +3,8 @@
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between pb-10 ">
 
             <!-- Left: Logo -->
-            <div class="mb-6 md:mb-0">
-                <img src="#" class="h-24 w-24" />
+            <div class="flex flex-col justify-center items-center mb-6 md:mb-0">
+                <img src="/assets/imgs/Logo.png" class="h-24 w-24 scale-[1.5]" />
                 <p class="text-sm text-gray-200 mt-2">
                     High-quality prints for your space.
                 </p>

@@ -16,7 +16,7 @@
         <div class="relative">
             <landing-hero />
 
-            <div class="relative z-20 -mt-16 max-w-[1200px] mx-auto">
+            <div class="relative z-20 -mt-8 sm:-mt-10 md:-mt-14 lg:-mt-16 px-10 max-w-[1200px] mx-auto">
                 <landing-carousel-img
                     :images="images"
                     :active-idx="activeIdx"

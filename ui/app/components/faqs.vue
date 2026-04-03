@@ -43,7 +43,7 @@
                     <!-- Question -->
                     <button             
                     @click="toggle(index)"
-                    class="text-left text-white text-lg md:text-xl w-full font-semibold"
+                    class="faqs-items text-left text-white text-lg md:text-xl w-full font-semibold"
                     >
                     {{ item.question }}
                     </button>

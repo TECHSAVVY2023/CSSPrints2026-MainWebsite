@@ -11,9 +11,9 @@
             <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
             ONE-STOP PRINTING AND DIGITAL
             </h1>
-            <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">
+            <h2 class="text-lg md:text-xl font-medium mb-8 max-w-2xl mx-auto">
             From custom mugs to ID services, we handle your printing needs with precision and care. Quality work, delivered fast.
-            </p>
+            </h2>
             <button class="bg-[#B86B1F] px-8 py-3 rounded-md font-semibold hover:bg-[#7E450C] transition uppercase text-sm tracking-widest">
             Enquire Now
             </button>

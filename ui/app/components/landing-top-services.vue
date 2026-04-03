@@ -4,8 +4,8 @@
 
 <template>
     <div id="top-selling-services" class="max-w-6xl mx-auto mt-32 pb-36 px-4 relative">
-        <h2 class="text-4xl font-bold text-[#222222] tracking-wide uppercase text-center">Top Selling Services</h2>
-        <div class="w-[460px] h-[2px] bg-[#222222] mx-auto mb-20 rounded"></div>
+        <h2 class="font-bold text-[#222222] text-4xl tracking-wide uppercase text-center">Top Selling Services</h2>
+        <div class="w-[340px] sm:w-[380px] md:w-[380px] lg:w-[400px] h-[2px] bg-[#222222] mx-auto mb-20 rounded"></div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 

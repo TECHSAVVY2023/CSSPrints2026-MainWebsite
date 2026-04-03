@@ -1,0 +1,25 @@
+.nav-link {
+    font-family: 'Barlow Condensed';
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Barlow';
+}
+
+h2 {
+    font-family: 'Barlow Condensed';
+}
+
+p {
+    font-family: 'Outfit';
+}
+
+button {
+    font-family: 'Outfit';
+}
+
+.faqs-items {
+    font-family: 'Barlow Condensed';
+    font-size: 25px;
+}

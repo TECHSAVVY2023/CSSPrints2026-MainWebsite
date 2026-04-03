@@ -13,8 +13,8 @@
         <div class="absolute inset-0 bg-black/50"></div>
 
         <!-- Content -->
-        <div class="relative z-10 max-w-7xl mx-auto 
-                    px-6 sm:px-12 lg:px-20">
+        <div class="relative z-10 w-full 
+                    px-6 sm:px-12 lg:px-20 text-left">
         
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4">
             SERVICES

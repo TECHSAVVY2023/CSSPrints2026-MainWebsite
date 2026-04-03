@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center">
+    <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 flex flex-col flex-col-reverse md:flex-row md:flex-row gap-12 items-center">
         
         <div class="flex-1">
             <h2 class="text-2xl font-bold mb-6 tracking-wide uppercase">Lorem Ipsum Dolor Sit Amet</h2>
